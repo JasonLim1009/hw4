@@ -1,0 +1,838 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+/*body{*/
+/*    background-image: linear-gradient(rgba(239, 239, 239, 0.8),rgba(239, 239, 239, 0.8));*/
+/*}*/
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("homework4img/Group 30.jpg");
+    background-position: center;
+    background-size: cover;
+
+}
+/*WHO WE ARE和WHY US图片调整*/
+.c{
+    min-height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+}
+nav a{
+    text-align: center;
+    color: palegoldenrod;
+    font-size: 2px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+/*顶部字体变横*/
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+/*顶部字体的横线*/
+.nav-links ul li::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover:after{
+    width: 100%;
+}
+/*特别按钮*/
+/*button{*/
+/*    width: 200px;*/
+/*    padding: 15px 0;*/
+/*    text-align: center;*/
+/*    margin: 20px 10px;*/
+/*    border-radius: 25px;*/
+/*    font-weight: bold;*/
+/*    border: 2px solid #009688;*/
+/*    background: transparent;*/
+/*    color: #fff;*/
+/*    cursor: pointer;*/
+/*    position: relative;*/
+/*    overflow: hidden;*/
+/*}*/
+/*span{*/
+/*    background: #009688 ;*/
+/*    height: 100%;*/
+/*    width: 0;*/
+/*    border-radius: 25px;*/
+/*    position: absolute;*/
+/*    left: 0;*/
+/*    bottom: 0;*/
+/*    z-index: -1; !*格子显示字体出现*!*/
+/*    transition: 0.5s;*/
+/*}*/
+/*button:hover span{*/
+/*    width: 100%;*/
+/*}*/
+/*button:hover{*/
+/*    border: none;*/
+/*}*/
+
+
+
+/*大字体在中间*/
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: left;
+}
+.text-box h1{
+    font-size: 55px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: darkgray;
+}
+
+
+
+
+/*大字体中间的小按钮*/
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.btn{
+    border: 1px solid dodgerblue;
+    background: deepskyblue ;
+    transition: 0.5s;
+}
+
+
+
+
+
+/*屏幕调整*/
+@media (max-width: 700px) {
+    .text-box h1{
+        font-size: 62px;
+    }
+    .nav-links ul li{
+        display: block;
+    }/*调整小屏幕的menu显示*/
+    .nav-links{
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    .nav-links ul{
+        padding: 30px;
+    }
+}
+
+
+
+
+/*WHO WE ARE大字体在右间*/
+.c .r-box{
+    width: 80%;
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: right ;
+}
+.c .r-box h1{
+    font-size: 45px;
+}
+.c .r-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: black;
+}
+.c .r .image{
+    flex: 1 1 11rem ;
+}
+
+.c .r .image img{
+    width: 40%;
+    float: left;
+}
+
+
+
+
+/*WHY US大字体在左间*/
+.c .l-box{
+    width: 80%;
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: left;
+}
+.c .l-box h1{
+    font-size: 45px;
+}
+.c .l-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: black;
+}
+.c .l .image{
+    flex: 1 1 11rem ;
+}
+
+.c .l .image img{
+    width: 39.5%;
+    float: right;
+}
+
+@media (max-width: 700px) {
+    .l-box{
+        flex-direction: column;
+    }
+}
+
+
+
+
+/*SOLUTION新一页的中间字体*/
+.ss{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    background-image: url("homework4img/Group 76.png");
+}
+.ss h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+.ss p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+/*!*新一页的中间3个字体变横*!*/
+.ss .row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+/*!*新一页的中间3个字体的格子*!*/
+.ss .row .solution-col{
+    flex-basis: 31%;
+    background: darkgray;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box; /*格子样花*/
+    transition: 0.5s;
+}
+.ss .row .solution-col h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.ss .row .solution-col:hover{
+    box-shadow: 0 0 20px 0 rgba(26, 248, 8, 0.8);
+}
+@media (max-width: 700px) {
+    .row{
+        flex-direction: column;
+    }
+}
+
+
+
+
+/*BENEFITS*/
+.bb{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    background-image: url("homework4img/Group 76.png");
+}
+.bb .row .benefits-col{
+    flex-basis: 16%;
+    background: transparent;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box; /*格子样花*/
+    transition: 0.5s;
+}
+/*显示格子出现*/
+.bb .row .benefits-col:hover{
+    background: darkgray;
+}
+.bb h1{
+    font-size: 35px;
+    font-weight: 600;
+    float: left;
+}
+.bb p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+/*!*新一页的中间3个字体变横*!*/
+.bb .row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.bb .row .benefits-col h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.bb .row .benefits-col:hover{
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
+}
+.bb .boy p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 16px;
+    padding: 10px;
+    float: left;
+}
+.bb .boy .bbttnn{
+    float: left;
+}
+
+
+
+
+/*新的小按钮*/
+.bbttnn{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.bbttnn:hover{
+    border: 1px solid dodgerblue;
+    background: deepskyblue ;
+    transition: 0.5s;
+}
+
+
+
+
+/*OUR TEAM*/
+.our{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.our .row .cft-col1{
+    flex-basis: 16%;
+    background: transparent;
+    border-radius: 100px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box; /*格子样花*/
+    transition: 0.5s;
+}
+/*显示格子出现*/
+.our .row .image:hover{
+    background: darkgray;
+}
+.our h1{
+    font-size: 35px;
+    font-weight: 600;
+}
+/*!*新一页的中间3个字体变横*!*/
+.our .row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.our .row .image:hover{
+    box-shadow: 0 0 50px 0 rgba(248, 11, 8, 0.8);
+}
+
+@media (max-width: 700px){
+    .our h1{
+        font-size: 24px;
+    }
+}
+
+
+
+/*CASE STUDIES新一页的中间字体*/
+.cs{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.cs h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+.cs p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+/*!*新一页的中间3个字体变横*!*/
+.cs .row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+/*!*新一页的中间3个字体的格子*!*/
+.cs .row .cs-col{
+    flex-basis: 31%;
+    background: darkgray;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 10px 1px;
+    /*box-sizing: border-box; !*格子样花*!*/
+    transition: 0.5s;
+}
+.cs .row .cs-col img{
+    width: 300px;
+}
+.cs .row .cs-col:hover{
+    box-shadow: 0 0 50px 0 rgba(255,80,0);
+}
+
+
+
+
+/*CERTIFICATIONS*/
+/*cft1*/
+.cft{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.cft .row .cft-col1{
+    flex-basis: 16%;
+    background: transparent;
+    border-radius: 100px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box; /*格子样花*/
+    transition: 0.5s;
+}
+/*显示格子出现*/
+.cft .row .cft-col1:hover{
+    background: darkgray;
+}
+.cft h1{
+    font-size: 35px;
+    font-weight: 600;
+}
+/*!*新一页的中间3个字体变横*!*/
+.cft .row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.cft .row .cft-col1:hover{
+    box-shadow: 0 0 50px 0 rgba(248, 11, 8, 0.8);
+}
+/*cft2*/
+.cft{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.cft .row .cft-col2{
+    flex-basis: 16%;
+    background: transparent;
+    border-radius: 100px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box; /*格子样花*/
+    transition: 0.5s;
+}
+/*显示格子出现*/
+.cft .row .cft-col2:hover{
+    background: darkgray;
+}
+.cft h1{
+    font-size: 35px;
+    font-weight: 600;
+}
+/*!*新一页的中间3个字体变横*!*/
+.cft .row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.cft .row .cft-col2:hover{
+    box-shadow: 0 0 50px 0 rgba(245, 248, 8, 0.8);
+}
+/*cft3*/
+.cft{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.cft .row .cft-col3{
+    flex-basis: 16%;
+    background: transparent;
+    border-radius: 100px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box; /*格子样花*/
+    transition: 0.5s;
+}
+/*显示格子出现*/
+.cft .row .cft-col3:hover{
+    background: darkgray;
+}
+.cft h1{
+    font-size: 35px;
+    font-weight: 600;
+}
+/*!*新一页的中间3个字体变横*!*/
+.cft .row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.cft .row .cft-col3:hover{
+    box-shadow: 0 0 50px 0 rgba(26, 248, 8, 0.8);
+}
+/*cft4*/
+.cft{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.cft .row .cft-col4{
+    flex-basis: 16%;
+    background: transparent;
+    border-radius: 100px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box; /*格子样花*/
+    transition: 0.5s;
+}
+/*显示格子出现*/
+.cft .row .cft-col4:hover{
+    background: darkgray;
+}
+.cft h1{
+    font-size: 35px;
+    font-weight: 600;
+}
+/*!*新一页的中间3个字体变横*!*/
+.cft .row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.cft .row .cft-col4:hover{
+    box-shadow: 0 0 50px 0 rgba(8, 21, 248, 0.8);
+}
+/*cft5*/
+.cft{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.cft .row .cft-col5{
+    flex-basis: 16%;
+    background: transparent;
+    border-radius: 100px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box; /*格子样花*/
+    transition: 0.5s;
+}
+/*显示格子出现*/
+.cft .row .cft-col5:hover{
+    background: darkgray;
+}
+.cft h1{
+    font-size: 35px;
+    font-weight: 600;
+}
+/*!*新一页的中间3个字体变横*!*/
+.cft .row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.cft .row .cft-col5:hover{
+    box-shadow: 0 0 50px 0 rgba(161, 8, 248, 1);
+}
+/*cft6*/
+.cft{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.cft .row .cft-col6{
+    flex-basis: 16%;
+    background: transparent;
+    border-radius: 100px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box; /*格子样花*/
+    transition: 0.5s;
+}
+/*显示格子出现*/
+.cft .row .cft-col6:hover{
+    background: darkgray;
+}
+.cft h1{
+    font-size: 35px;
+    font-weight: 600;
+}
+/*!*新一页的中间3个字体变横*!*/
+.cft .row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.cft .row .cft-col6:hover{
+    box-shadow: 0 0 50px 0 rgba(158, 74, 0, 1);
+}
+
+
+
+
+
+/*INSIGHTS*/
+.ins{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    background-image: linear-gradient(rgba(239, 239, 239, 0.8),rgba(239, 239, 239, 0.8));
+}
+.ins h1{
+    font-size: 35px;
+    font-weight: 600;
+}
+/*!*新一页的中间3个字体变横*!*/
+.ins .row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/*!*新一页的中间3个字体的格子*!*/
+.ins .row .ins-col{
+    flex-basis: 31%;
+    background: darkgray;
+    border-radius: 65px;
+    margin-bottom: 5%;
+    padding: 15px 1px;
+    box-sizing: border-box; /*格子样花*/
+    transition: 0.3s;
+}
+.ins .row .ins-col:hover{
+    box-shadow: 0 0 70px 0 rgba(8, 21, 248, 0.8);
+}
+
+@media (max-width: 700px){
+    .ins h1{
+        font-size: 24px;
+    }
+}
+
+
+
+
+
+/*CONTACT US左边*/
+.contact{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("homework4img/Group 55.png");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.contact .ct{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact .ct img{
+    width: 180px;
+}
+.contact .ct a{
+    text-align: center;
+    color: palegoldenrod;
+    font-size: 2px;
+}
+.contact .contact-text p{
+    margin: 10px 30px 40px;
+    font-size: 14px;
+    color: darkgray;
+}
+
+.contact .contact-col h1{
+    margin: 10px 30px 40px;
+    color: rebeccapurple;
+    font-size: 32px;
+}
+.contact .contact-col p{
+    margin: 10px 30px 40px;
+    font-size: 14px;
+    color: darkgray;
+}
+/*CONTACT US右边*/
+.contact .co {
+    width: 40%;
+    color: palegoldenrod;
+    position: absolute;
+    top: 33%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: right;
+    float: right;
+}
+.contact .co h1{
+    font-size: 35px;
+}
+.contact .co p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: black;
+}
+
+.co form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 800px;
+    max-width: 80%;
+    padding: 2% 32%;
+}
+.co form .btn {
+    padding: 12px 18px;
+    width: 29%;
+}
+.co form input {
+    padding: 3px;
+    margin: -15px -200px 20px 0;
+    width: 80%;
+    font-size: 18px;
+    color: black;
+}
+.co textarea{
+    margin: -12px -200px 20px 0;
+}
+
+
+
+
+
+/*最底部文字*/
+.footer{
+    background: black;
+    text-align: center;
+}
+.footer .links{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    gap: 1rem;
+}
+.footer .links a{
+    padding: 1rem 1rem;
+    color: #fff;
+    border: var(--border);
+    font-size: 10px;
+    text-decoration: none;
+}
+.footer .links a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.footer .links a:hover:after{
+    width: 100%;
+}
+/*最底部文字*/
+.footer .credit{
+    font-size: 0.5rem;
+    color: #fff;
+    font-weight: lighter;
+    padding: 1.5rem;
+}
+.footer .credit span{
+    color: yellow;
+}
