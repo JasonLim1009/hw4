@@ -12,7 +12,10 @@
     background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("homework4img/Group 30.jpg");
     background-position: center;
     background-size: cover;
+}
 
+.header h1 {
+    font-size: 10px;
 }
 /*WHO WE ARE和WHY US图片调整*/
 .c{
@@ -707,89 +710,75 @@ nav a{
 
 
 
-/*CONTACT US左边*/
-.contact{
-    min-height: 100vh;
-    width: 100%;
-    background-image: url("homework4img/Group 55.png");
-    background-position: center;
-    background-size: cover;
-    position: relative;
-}
-.contact .ct{
+/*CONTACT US*/
+#contact-details{
+    background-image: linear-gradient(rgba(239, 239, 239, 0.8),rgba(239, 239, 239, 0.8));
     display: flex;
-    padding: 2% 6%;
-    justify-content: space-between;
     align-items: center;
-}
-.contact .ct img{
-    width: 180px;
-}
-.contact .ct a{
-    text-align: center;
-    color: palegoldenrod;
-    font-size: 2px;
-}
-.contact .contact-text p{
-    margin: 10px 30px 40px;
-    font-size: 14px;
-    color: darkgray;
+    justify-content: space-between;
+    padding: 7% 7%;
 }
 
-.contact .contact-col h1{
-    margin: 10px 30px 40px;
-    color: rebeccapurple;
-    font-size: 32px;
-}
-.contact .contact-col p{
-    margin: 10px 30px 40px;
-    font-size: 14px;
-    color: darkgray;
-}
-/*CONTACT US右边*/
-.contact .co {
+#contact-details .details{
     width: 40%;
-    color: palegoldenrod;
-    position: absolute;
-    top: 33%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    text-align: right;
-    float: right;
-}
-.contact .co h1{
-    font-size: 35px;
-}
-.contact .co p{
-    margin: 10px 0 40px;
-    font-size: 14px;
-    color: black;
 }
 
-.co form {
+#contact-details .details span,
+#form-details form span{
+    font-family: 'Montserrat';
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+
+#contact-details .details h2,
+#form-details form h2{
+    font-family: 'Montserrat-Bold';
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+#contact-details .details h3{
+    font-family: 'Montserrat-Bold';
+    font-size: 1.5rem;
+}
+
+#contact-details .details li{
+    list-style: none;
+    display: flex;
+    padding: 10px 0;
+}
+
+#contact-details .details li p{
+    margin: 0;
+    font-size: 18px;
+    color: #000;
+}
+
+#form-details {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    padding: 80px;
+    border: 1px solid #e1e1e1;
+}
+
+#form-details form{
+    width: 65%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 800px;
-    max-width: 80%;
-    padding: 2% 32%;
+    align-items: flex-start;
 }
-.co form .btn {
-    padding: 12px 18px;
-    width: 29%;
+
+#form-details form input,
+#form-details form textarea{
+    width: 100%;
+    padding: 12px 15px;
+    outline: none;
+    margin-bottom: 20px;
+    border: 1px solid #e1e1e1;
 }
-.co form input {
-    padding: 3px;
-    margin: -15px -200px 20px 0;
-    width: 80%;
-    font-size: 18px;
-    color: black;
-}
-.co textarea{
-    margin: -12px -200px 20px 0;
-}
+
+
 
 
 

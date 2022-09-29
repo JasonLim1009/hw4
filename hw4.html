@@ -6,12 +6,12 @@
     <link rel="stylesheet" href="hw4.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,700;1,600&display=swap" rel="stylesheet">
-
 </head>
+
 <body>
 <section class="header" id="HOME">
     <nav>
-        <a href="homework4.html"><img src="homework4img/Group%2084.png" alt=""><br><h1>CONTACT CENTER SOLUTIONS</h1></a>
+        <a href="hw4.html"><img src="homework4img/Group%2084.png" alt=""><br><h1>CONTACT CENTER SOLUTIONS</h1></a>
         <div class="nav-links" id="nav-links">
 
                 <ul>
@@ -24,7 +24,7 @@
                     <li><a href="#CASE STUDIES">CASE STUDY</a></li>
                     <li><a href="#CERTIFICATIONS">CERTIFICATIONS</a></li>
                     <li><a href="#INSIGHTS">INSIGHTS</a></li>
-                    <li><a href="#CONTACT US">CONTACT US</a></li>
+                    <li><a href="#contact-details">CONTACT US</a></li>
                 </ul>
         </div>
 
@@ -280,31 +280,45 @@
 
 
 <!--CONTACT US-->
-<section class="contact" id="CONTACT US">
-    <div class="ct">
-    <a href="homework4.html"><img src="homework4img/Group%2084.png" alt=""><br><h1>CONTACT CENTER SOLUTIONS</h1></a>
-    </div>
-    <div class="contact-text">
-        <p>LOREM IPSUM DOLOR SIT AMET, CONSECTETUR <br> ADIPISCING ELIT, SED DO EIUSMOD TEMPOR <br> INCIDIDUNT UT LABORE ET DOLORE
-            <br> MAGNA ALIQUA. <br><br> LOREM IPSUM DOLOR SIT AMET, CONSECTETUR <br> ADIPISCING ELIT,SED DO EIUSMOD TEMPOR INCID
-            <br> IDUNT UT LABORE ET DOLORE MAGNA ALIQUA.</p>
-    </div>
-    <div class="contact-col">
-        <h1>GET SUPPORT</h1></a>
-        <p>MON-FRI: 9:00AM - 6:00AM</p>
+<section id="contact-details" class="section-p1">
+    <div class="details">
+        <span>GET IN TOUCH</span>
+        <h2>Visit one of our agency locations or contact us today.</h2>
+        <h3>Head Office</h3>
+        <div>
+            <li>
+                <i class="fa-solid fa-map-location"></i>
+                <p>: 56 Glassford Street Glasgow G1 1UL New York</p>
+            </li>
+            <li>
+                <i class="fa-solid fa-envelope-circle-check"></i>
+                <p>: contact@example.com</p>
+            </li>
+            <li>
+                <i class="fa-solid fa-phone"></i>
+                <p>: +07 123 1234 /(+60) 14 123 1234</p>
+            </li>
+            <li>
+                <i class="fa-solid fa-clock"></i>
+                <p>: Monday to Saturday<br> 10.00am to 18.00pm</p>
+            </li>
+        </div>
     </div>
 
-    <div class="co">
-        <h1>CONTACT US</h1>
-        <form>
-            <input type="name" placeholder="Name">
-            <input type="email" placeholder="Email">
-            <input type="company" placeholder="Company">
-            <textarea cols="53" rows="10" placeholder="Your Message"></textarea>
-            <a href="#" class="btn">SUBMIT</a>
+    <div id="form-details">
+        <form onsubmit="sendEmail(); reset(); return false;">
+            <span>LEAVE A MESSAGE</span>
+            <h2>We love to hear from you</h2>
+            <input type="text" placeholder="Your Name" name="name" required>
+            <input type="text" placeholder="E-mail" name="email" required>
+            <input type="text" placeholder="Phone" name="phone" required>
+            <input type="hidden" name="_next" value="thankyou.html">
+            <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn">Submit</button>
         </form>
-    </div>
 </section>
+
+
 
 
 
@@ -320,7 +334,7 @@
         <a href="#CASE STUDIES">CASE STUDY</a>
         <a href="#CERTIFICATIONS">CERTIFICATIONS</a>
         <a href="#INSIGHTS">INSIGHTS</a>
-        <a href="#CONTACT US">CONTACT US</a>
+        <a href="#contact-details">CONTACT US</a>
     </div>
     <div class="credit">&copy;COPYRIGHT 2022<span> | Created By MR.Jason LIM</span> | ALL RIGHTS RESERVED | POWERED BY SYSTEM</div>
 </section>
